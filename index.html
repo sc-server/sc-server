@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Classic Login Form Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
 <body>
-
-<h1>Bah123 ka Penduri</h1>
-
-<p>Click the button below to display the hidden content from the template element.</p>
-
-<button onclick="showContent()">Show hidden content</button>
-
-<template>
-  <h2>Flower</h2>
-  <img src="img_white_flower.jpg" width="214" height="204">
-</template>
-
-<script>
-function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
+<!-- partial:index.partial.html -->
+<section class='login' id='login'>
+  <div class='head'>
+  <h1 class='company'>SC SERVER</h1>
+  </div>
+  <p class='msg'>Welcome back</p>
+  <div class='form'>
+    <form>
+  <input type="text" placeholder='Username' class='text' id='username' required><br>
+  <input type="password" placeholder='••••••••••••••' class='password'><br>
+  <a href="sc-server.tk/sourav.html" class='btn-login' id='do-login'>Login</a>
+    </form>
+  </div>
+</section>
+<footer>
+  <p>Made with <span class='heart'>&hearts;</span> by SS(<a href='https://github.com/pxntxs'>@pxntxs</a>)</p>
+  <p>Gradient: <a href='https://uigradients.com/#Turquoiseflow'>https://uigradients.com/#Turquoiseflow</a></p>
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
 </body>
 </html>
