@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+if(isset($_POST['submit'])){
+    $user= $_POST['username'];
+    $pass= $_POST['password'];
+    if($user=="admin" && $pass=="admin"){
+     echo("username & password matched");
+    } else{
+     echo("please enter valid credential");
+    }
+}
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -16,8 +26,8 @@
   <div class='form'>
     <form>
   <input type="text" placeholder='Username' class='text' id='username' required><br>
-  <input type="password" placeholder='••••••••••••••' class='password' required><br>
-  <a href="#" class='btn-login' id='do-login'>Login</a>
+  <input type="password" placeholder='••••••••••••••' class='passname' required><br>
+  <a href="#" class='btn-login' id='submit'>Login</a>
     </form>
   </div>
 </section>
